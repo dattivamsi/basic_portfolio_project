@@ -6,7 +6,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Education from "./components/Education";
-imp
+import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,15 +34,18 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/education" element={<Education />}/>
-          <Route path="/" element={<Skills />}/>
-          <Route path="/" element={<Home />}/>
-        </Routes>
-      </BrowserRouter>
+      <div className="portfolio-container">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/blogs" element={<Skills />} />
+            <Route path="/contactus" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

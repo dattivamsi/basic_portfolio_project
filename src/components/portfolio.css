@@ -1,0 +1,42 @@
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2rem;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-page-container{
+    max-width: 25rem;
+    margin-top: 10rem;
+  }
+  .designation{
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  button{
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    background-color: #7d2ae8;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+  }
+  button::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  button:hover::after{
+    background-color: transparent;
+  }
+  .home-page-button-container button{
+    margin-right: 2rem;
+  }
