@@ -1,7 +1,10 @@
+body{
+  overflow: hidden;
+}
 .portfolio-container{
   background-image: url("https://img.freepik.com/free-photo/handsome-businessman-suit-glasses-cross-arms-chest-look_176420-21750.jpg?w=740&t=st=1691932112~exp=1691932712~hmac=62fbb20b4122aa215526324baa3daa03668a70980b0149011bbef74b96687f18");
   height: 100vh;
-  width: 100vw;
+  width: 85rem;
   background-size: cover;
   padding: 2rem 4rem;
 }

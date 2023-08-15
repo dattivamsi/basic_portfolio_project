@@ -20,23 +20,67 @@ ul li{
     width: 8rem;
     height: 2.5rem;
     border: none;
-    background-color: #7d2ae8;
+    background: #fff;
     color: #fff;
     border-radius: 10px;
     font-size: 14px;
     position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
   }
-  button::after{
-    position: absolute;
+  button:hover{
+    color: black;
+  }
+  
+  button::before{
     content: "";
+    position: absolute;
     top: 0;
     left:0;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #7d2ae8;
+    transform-origin: left;
     transition: transform 0.5s ease;
-    cursor: pointer;
+    transform: scaleX(1);
   }
-  button:hover::after{
-    background-color: transparent;
+  button:hover::before{
+    transform-origin: right;
+    transform: scaleX(0);
+    
   }
   .home-page-button-container button{
     margin-right: 2rem;
+  }
+  .icons-button{
+    width: 40px ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .icons-button span{
+    border-radius: 20px;
+  }
+  .icons-button::before{
+    width: 40px;
+    border-radius: 20px;
+  }
+  .icon{
+    font-size: 25px;
+  }
+  .icon:hover{
+    color: black;
+  }
+  .icons-button span{
+    display: flex;
+  }
+  .icons-container{
+    display: flex;
+    margin-top: 10rem;
   }
