@@ -8,6 +8,9 @@ import About from "./components/About";
 import Education from "./components/Education";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
+import Navbar from "./components1/Navbar/Navbar";
+import Test from "./Test";
+import Hero from "./components1/hero/Hero";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,7 +37,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <div className="portfolio-container">
+      {/* <div className="portfolio-container">
         <BrowserRouter>
           <Header />
           <Routes>
@@ -45,7 +48,24 @@ function App() {
             <Route path="/contactus" element={<Home />} />
           </Routes>
         </BrowserRouter>
+      </div> */}
+      <div>
+        <section id="HomePage">
+          <Navbar />
+          <Hero />
+        </section>
+        <section id="Services">parallex</section>
+        <section>Services</section>
+        <section id="Portfolio">Parallex</section>
+        <section>Portfolio1</section>
+        <section>Portfolio2</section>
+        <section>Portfolio3</section>
+        <section id="Contact">Contact</section>
       </div>
+      {/* <div>
+        <Test />
+        <Test />
+      </div> */}
     </>
   );
 }

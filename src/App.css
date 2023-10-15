@@ -1,4 +1,40 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans",sans;
+}
 body{
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .course{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+} */
+
+/*protofolio css..................  
+/* body{
   overflow: hidden;
 }
 .portfolio-container{
@@ -7,4 +43,4 @@ body{
   width: 85rem;
   background-size: cover;
   padding: 2rem 4rem;
-}
+} */
